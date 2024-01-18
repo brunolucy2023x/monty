@@ -1,9 +1,18 @@
 #include "monty.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
+#include <ctype.h>
 /**
  * addnode - add node to the head stack
  * @head: head of the stack
  * @n: new_value
- * Return: no return
+ * creator: Bruno Owino
+ * email: brunookoth44@gmail.com
+ * Return: no return Solution
 */
 void addnode(stack_t **head, int n)
 {
