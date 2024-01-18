@@ -1,9 +1,18 @@
 #include "monty.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
+#include <ctype.h>
 /**
  * f_div - divides the top two elements of the stack.
  * @head: stack head
  * @counter: line_number
- * Return: no return
+ * creator: Bruno Owino
+ * email: brunookoth44@gmail.com
+ * Return: solution
 */
 void f_div(stack_t **head, unsigned int counter)
 {
