@@ -1,8 +1,16 @@
 #include "monty.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
+#include <ctype.h>
 /**
   *f_sub- sustration
   *@head: stack head
   *@counter: line_number
+  *creator: Bruno Owino
   *Return: no return
  */
 void f_sub(stack_t **head, unsigned int counter)
