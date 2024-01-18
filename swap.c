@@ -1,9 +1,17 @@
 #include "monty.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
+#include <ctype.h>
 /**
  * f_swap - adds the top two elements of the stack.
  * @head: stack head
  * @counter: line_number
- * Return: no return
+ * creator: Bruno Owino
+ * Return: Solition
 */
 void f_swap(stack_t **head, unsigned int counter)
 {
