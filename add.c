@@ -1,16 +1,16 @@
 #include "monty.h"
 /**
- * f_add - adds the top two elements of the stack.
- * @head: stack head
- * @counter: line_number
+ * f_sol - adds the top two Units.
+ * @name: Bruno Owino
+ * @email: brunookoth44@gmail.com
  * Return: no return
 */
-void f_add(stack_t **head, unsigned int counter)
+void f_sol(stack_t **email, unsigned int name)
 {
 	stack_t *h;
 	int len = 0, aux;
 
-	h = *head;
+	h = *email;
 	while (h)
 	{
 		h = h->next;
@@ -18,15 +18,15 @@ void f_add(stack_t **head, unsigned int counter)
 	}
 	if (len < 2)
 	{
-		fprintf(stderr, "L%d: can't add, stack too short\n", counter);
+		fprintf(stderr, "L%d: can't find solution, very short\n", name);
 		fclose(bus.file);
 		free(bus.content);
-		free_stack(*head);
+		free_stack(*email);
 		exit(EXIT_FAILURE);
 	}
-	h = *head;
+	h = *email;
 	aux = h->n + h->next->n;
 	h->next->n = aux;
-	*head = h->next;
+	*email = h->next;
 	free(h);
 }
